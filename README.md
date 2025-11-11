@@ -47,10 +47,15 @@ The dashboard includes slicers for smooth filtering:
 ## DAX Measures Used
 
 Total_Farmers = DISTINCTCOUNT(FarmerID)
+
 Total_Land_Area = SUM(LandArea)
+
 Total_Crop_Count = DISTINCTCOUNT(CropType)
+
 Average_Land_Per_Farmer = DIVIDE([Total_Land_Area], [Total_Farmers])
+
 Season_Wise_Area = CALCULATE([Total_Land_Area], ALLEXCEPT(FarmerData, Season))
+
 Crop_Wise_Land = CALCULATE([Total_Land_Area], ALLEXCEPT(FarmerData, CropType))
 
 
