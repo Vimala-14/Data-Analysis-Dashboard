@@ -84,8 +84,9 @@ This project demonstrates:
 - Dashboard Design
 - Insights for Agriculture
 
-##🧑‍💻 Author
+## 🧑‍💻 Author
 Vimala D
+
 Data Analyst & Full Stack Developer 
 
 
