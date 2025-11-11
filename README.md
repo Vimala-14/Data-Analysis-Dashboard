@@ -44,31 +44,16 @@ The dashboard includes slicers for smooth filtering:
 - **Soil Type**
 - **Irrigation Method**
 
----
+## DAX Measures Used
 
-## 🧮 DAX Measures Used
-
-```DAX
 Total_Farmers = DISTINCTCOUNT(FarmerID)
-
 Total_Land_Area = SUM(LandArea)
-
 Total_Crop_Count = DISTINCTCOUNT(CropType)
-
 Average_Land_Per_Farmer = DIVIDE([Total_Land_Area], [Total_Farmers])
-
 Season_Wise_Area = CALCULATE([Total_Land_Area], ALLEXCEPT(FarmerData, Season))
-
 Crop_Wise_Land = CALCULATE([Total_Land_Area], ALLEXCEPT(FarmerData, CropType))
 
 
-## Dataset Details
-File Name: farmer_land_records  
-The dataset includes:
-- Farmer ID
-- District
-- Crop Type
-- Soil Type
-- Irrigation Method
-- Season
-- Land Area
+
+
+
