@@ -60,3 +60,15 @@ Average_Land_Per_Farmer = DIVIDE([Total_Land_Area], [Total_Farmers])
 Season_Wise_Area = CALCULATE([Total_Land_Area], ALLEXCEPT(FarmerData, Season))
 
 Crop_Wise_Land = CALCULATE([Total_Land_Area], ALLEXCEPT(FarmerData, CropType))
+
+
+## Dataset Details
+File Name: farmer_land_records  
+The dataset includes:
+- Farmer ID
+- District
+- Crop Type
+- Soil Type
+- Irrigation Method
+- Season
+- Land Area
